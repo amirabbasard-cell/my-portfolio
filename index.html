@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI SPACE OS - Amirabbas</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Three.js WebGL -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- NEURAL CANVAS -->
+<canvas id="neural"></canvas>
+
+<!-- WEBGL BACKGROUND -->
+<div id="webgl"></div>
+
+<!-- TOP BAR -->
+<header>
+  <div class="logo">AI-OS</div>
+
+  <div class="skills-mini">
+    <span>Web AI</span>
+    <span>Design</span>
+    <span>Research</span>
+  </div>
+</header>
+
+<!-- MAIN GRID -->
+<div class="grid">
+
+  <!-- PROFILE PANEL -->
+  <section class="panel profile">
+
+    <img src="https://i.imgur.com/FIwM0sk.jpeg">
+
+    <h1 id="name"></h1>
+    <p id="role"></p>
+
+    <div class="tags">
+      <span>AI</span>
+      <span>Web Design</span>
+      <span>Research</span>
+      <span>Writing</span>
+    </div>
+
+  </section>
+
+  <!-- SKILL PANEL -->
+  <section class="panel skills">
+
+    <h2>SKILL MATRIX</h2>
+
+    <div class="bar"><div id="fa"></div><p>Persian</p></div>
+    <div class="bar"><div id="en"></div><p>English</p></div>
+    <div class="bar"><div id="ar"></div><p>Arabic</p></div>
+    <div class="bar"><div id="web"></div><p>Web Design</p></div>
+
+  </section>
+
+  <!-- CHAT AI -->
+  <section class="panel chat">
+
+    <h2>AI CHAT CORE</h2>
+
+    <div id="chatBox"></div>
+
+    <input id="input" placeholder="Ask AI..." />
+    <button onclick="send()">Send</button>
+
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
